@@ -1,5 +1,44 @@
 /* CSS files add styling rules to your content */
-
-h1 {
-  color: green;
+*{
+  margin:0;
+}
+body{
+  background:URL('https://i.insider.com/5dfab6ce855cc20c514e79f6?width=1000&format=jpeg&auto=webp');
+}
+.nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  background:grey;
+  padding: 20px 0;
+}
+.link{
+  margin:0 10px;
+  font-family:helvetica;
+  font-weight:300;
+  font-size:15px;
+  color:white;
+}
+.link:hover{
+  border-bottom:1px solid white;
+}
+.me-n-az{
+  max-height:50vh;
+  display:block;
+  margin:20px auto;
+  border-radius:10px;
+}
+.me-n-az:hover{
+  box-shadow:0 0 0 1px white;
+}
+.intro-text{
+  display:block;
+  margin:0 auto;
+  width:80vw;
+  border-radius:20px;
+  padding:10px;
+  background:grey;
+  font-family:helvetica;
+  font-weight:300;
+  color:white;
 }
