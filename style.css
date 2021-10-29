@@ -8,6 +8,7 @@ body{
 .nav{
   display:flex;
   flex-direction:row;
+  width:100%;
   justify-content:flex-start;
   background:grey;
   padding: 20px 0;
@@ -18,9 +19,10 @@ body{
   font-weight:300;
   font-size:15px;
   color:white;
+  text-decoration:none;
 }
 .link:hover{
-  border-bottom:1px solid white;
+  border-bottom:2px solid white;
 }
 .me-n-az{
   max-height:50vh;
@@ -29,7 +31,7 @@ body{
   border-radius:10px;
 }
 .me-n-az:hover{
-  box-shadow:0 0 0 1px white;
+//idk ill come back to this.
 }
 .intro-text{
   display:block;
@@ -40,5 +42,123 @@ body{
   background:grey;
   font-family:helvetica;
   font-weight:300;
+  color:white;
+  transition:0.3s;
+}
+.intro-text:hover{
+  box-shadow:2px 2px 8px black;
+  background:white;
+  color:black;
+}
+.center-project-container{
+  display:flex;
+  justify-content:center;
+}
+.projects-container{
+  margin:10px 0 0 0 ;
+  display:flex;
+  flex-direction:column;
+  width:90%;
+  height:auto;
+  padding:10px;
+/*   background:white; */
+}
+.project-row{
+  display:flex;
+/*   background:grey; */
+  justify-content:center;
+  
+}
+.project-box{
+  width:30vw;
+  min-width:150px;
+  height:30vw;
+  min-height:150px;
+  background:grey;
+  margin:5px;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+.project-box:hover{
+  background:white;
+  box-shadow:2px 2px 8px black;
+}
+.project-box:hover .project-description{
+  color:black;
+}
+.project-img{
+  max-width:100%;
+  display:block;
+  margin:auto;
+}
+.project-description{
+  min-height:10%;
+  max-height:25%;
+  color:white;
+  font-family:helvetica;
+  font-weight:300;
+  min-font-size:10px;
+  overflow: scroll;
+  word-wrap: break-word;
+  transition:0.3s;
+}
+.subtitle{
+  height:20vh;
+  width:100%;
+/*   background:white; */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin:10px 0 0 0 ;
+}
+.subtitle-text{
+text-align:center;
+  color:white;
+  font-family:helvetica;
+  font-weight:400px;
+  font-size:50px;
+}
+.try-project{
+  color:white;
+  font-family:helvetica;
+  font-weight:300;
+  padding:10px;
+  background:blue;
+  border-radius:20px;
+  border: 2px solid lightblue;
+  display:block;
+  margin:10px auto;
+  cursor:pointer;
+}
+.social-container{
+  display:block;
+  margin: 0 auto;
+  background:grey;
+  border-radius:20px;
+  max-height:30vh;
+  height:auto;
+  width:90vw;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+}
+.social-img{
+  width:300px;
+/*   background:blue; */
+}
+.social-text{
+/*   background:red; */
+  width:60%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.center{
+  text-align:center;
+  font-size:30px;
+  font-family:helvetica;
+  font-weight:300;
+  overflow:scroll;
   color:white;
 }
